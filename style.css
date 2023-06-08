@@ -1,27 +1,37 @@
-#navbar li {
+#project-head {
   font-family: Poppins, Arial, sans-serif;
   color: white;
+  text-align: center;
+}
+
+.info-text {
+  font-family: "Space mono", "Courier New", Courier, monospace;
+  color: rgb(255, 251, 230);
 }
 
 body {
   margin: 0px;
-}
-
-#navbar {
   background-color: black;
 }
-#navbar #logo {
+
+#logo {
   font-family: "Instrument Serif", "Times New Roman", Times, serif;
   color: rgb(255, 244, 172);
   font-size: 30px;
-  padding: 20px;
+  padding: 20px 10px 20px 10px;
   margin: 0px;
+  text-decoration: none;
+  display: inline-block;
 }
-#navbar li {
+
+.info-text {
+  font-size: 18px;
+  text-align: center;
+  padding: 30px;
+}
+
+#project-head {
   font-size: 30px;
-  padding: 20px;
-  margin: 0px;
-  display: inline;
 }
 
 /*# sourceMappingURL=style.css.map */
