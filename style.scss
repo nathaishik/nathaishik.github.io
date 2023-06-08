@@ -1,7 +1,7 @@
 $bg: black;
 
 %headers {
-    font-family: 'Instrument Serif', 'Times New Roman', Times, serif;
+    font-family: Poppins, Arial, sans-serif;
     color: white;
     text-align: center;
 }
@@ -16,18 +16,32 @@ body {
     background-color: $bg;
 }
 
-#logo {
-    font-family: 'Instrument Serif', 'Times New Roman', Times, serif;
-    color: rgb(255, 244, 172);
-    font-size: 30px;
-    padding: 20px 10px 20px 10px;
-    margin: 0px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-#navbar {
+ul {
     list-style-type: none;
+
+    li {
+        display: inline-block;
+
+    }
+
+    #logo {
+        color:rgb(255, 239, 162);
+        font-family: 'Instrument Serif', 'Times New Roman', Times, serif;
+        padding: 15px 8px 15px 8px;
+        font-size: 30px;
+        margin: 0px;
+        text-decoration: none;
+
+    }
+
+    .link {
+        color:rgb(255, 252, 240);
+        font-family: Poppins, Arial, sans-serif;
+        padding: 15px 8px 15px 8px;
+        font-size: 25px;
+        margin: 0px;
+        text-decoration: none;
+    }
     
 }
 
