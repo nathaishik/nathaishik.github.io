@@ -1,0 +1,35 @@
+$bg: black;
+%headers {
+    font-family: Poppins, Arial, sans-serif;
+    color: white;
+}
+
+%text {
+    font-family: 'Space mono', 'Courier New', Courier, monospace;
+    color: rgb(255, 251, 230);
+}
+
+body {
+    margin: 0px;
+}
+
+#navbar {
+    background-color: $bg;
+
+    #logo {
+        font-family: 'Instrument Serif', 'Times New Roman', Times, serif;
+        color: rgb(255, 244, 172);
+        font-size: 30px;
+        padding: 20px;
+        margin: 0px;
+    }
+
+    li {
+        @extend %headers;
+        font-size: 30px;
+        padding: 20px;
+        margin: 0px;
+        display: inline;
+    }
+
+}

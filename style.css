@@ -1,0 +1,27 @@
+#navbar li {
+  font-family: Poppins, Arial, sans-serif;
+  color: white;
+}
+
+body {
+  margin: 0px;
+}
+
+#navbar {
+  background-color: black;
+}
+#navbar #logo {
+  font-family: "Instrument Serif", "Times New Roman", Times, serif;
+  color: rgb(255, 244, 172);
+  font-size: 30px;
+  padding: 20px;
+  margin: 0px;
+}
+#navbar li {
+  font-size: 30px;
+  padding: 20px;
+  margin: 0px;
+  display: inline;
+}
+
+/*# sourceMappingURL=style.css.map */
