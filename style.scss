@@ -1,40 +1,89 @@
-$bg: black;
-
-%headers {
-    font-family: Poppins, Arial, sans-serif;
-    color: white;
-    text-align: center;
-}
-
-%text {
-    font-family: 'Space mono', 'Courier New', Courier, monospace;
-    color: rgb(255, 251, 231);
-}
+$theme : rgb(163, 230, 247);
+$abg: white;
 
 body {
     margin: 0px;
-    background-color: $bg;
+    background-color: black;
 }
 
-#logo {
-    font-family: 'Instrument Serif', 'Times New Roman', Times, serif;
-    color: rgb(255, 244, 172);
-    font-size: 30px;
-    padding: 20px 10px 20px 10px;
-    margin: 0px;
-    text-decoration: none;
-    display: inline-block;
+/*Styling for the navbar.*/
+
+#navbar {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: 200px auto;
+
+    #logo{
+        font-family: 'DM Serif Display', Serif;
+        font-size: 30px;
+        padding: 5px 20px;
+        color: $abg;
+        
+        a:hover {
+            color: $theme;
+            transition-duration: 100ms;
+        }
+    }
+
+    #nav-links {
+        font-family: 'DM Serif Display', serif;
+        font-size: 24px;
+
+        ul {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+
+            li{
+                float: right;
+                margin: 0px 5px;
+               
+                a{
+                    display: block;
+                    padding: 9.5px 20px;
+                    text-align: center;
+                }   
+
+                a:hover {
+                    transition-duration: 80ms;
+                    color: $theme;
+                }
+            }
+        }  
+    }
+    
+    a{
+        text-decoration: none;
+        color: $abg;
+    }   
 }
 
+/*Styling for the intro paragraph.*/
 
-.info-text {
-    @extend %text;
-    font-size: 18px;
-    text-align: center;
+#intro {
+    margin: 50px;
     padding: 30px;
+
+    p {
+        color: $theme;
+        font-family: 'Space Mono', monospace;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+    }
 }
 
-#project-head {
-    @extend %headers;
-    font-size: 30px;
+/*Styling the Project Section*/
+
+#projects {
+    margin: 30px;
+    padding: 30px 80px;
+
+    header {
+        font-family: 'Space Grotesk', Arial, sans-serif;
+        font-size: 30px;
+        font-weight: medium;
+        text-align: center;
+        color: $abg;
+    }
 }
