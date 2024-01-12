@@ -10,7 +10,7 @@
     background: black;
     color: rgb(213, 213, 213);
   }
-  a, h1, h3 {
+  a, h3 {
     color: white;
   }
   .brand {
@@ -31,8 +31,8 @@
     background: white;
     color: rgb(31, 31, 31);
   }
-  a, h1, h3 {
-    color: rgb(0, 0, 0);
+  a, h3 {
+    color: rgb(255, 255, 255);
   }
   .brand {
     color: transparent;
