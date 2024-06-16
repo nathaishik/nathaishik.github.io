@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url("./fonts/DMSans.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url("./fonts/DMSans-Italic.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kalnia";
+    src: url("./fonts/Kalnia.ttf");
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("./fonts/space_grotesk.ttf");
+}
+
+/* Icons */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* general */
+:root {
+    --f: rgb(45, 45, 45);
+    --pri-f:rgb(0, 0, 0);
+    --accent: rgb(255, 60, 30);
+    --sec-accent: rgb(255, 244, 190);
+    --bg: rgb(255, 255, 255);
+    --text: "DM Sans", sans-serif;
+    --padding: 10svw;
+    --p-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --f: rgb(226, 226, 226);
+        --pri-f:rgb(255, 255, 255);
+        --accent: rgb(255, 34, 0);
+        --sec-accent: rgb(255, 222, 58);
+        --bg: rgb(0, 0, 0);
+    }
+}
+
+img {
+    width: 100%;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: var(--text);
+    color: var(--f);
+    background: var(--bg);
+}
+
+.logo {
+    font-family: 'Space Grotesk', monospace;
+    font-weight: 900;
+    font-size: 4rem;
+    margin-block: auto;
+}
+
+/* Nav */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: var(--padding);
+
+    #navigation ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        height: 15svh;
+
+
+        a {
+            text-decoration: inherit;
+            color: inherit;
+            display: flex;
+            gap: .5rem;
+            justify-content: space-between;
+            transition-duration: 0.2s;
+
+
+            svg {
+                height: 100%;
+
+                * {
+                    stroke: var(--f) !important;
+                }
+            }
+
+
+            div {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+            }
+
+            h4, p {
+                margin: 0;
+                font-weight: normal;
+            }
+
+            h4 {
+                font-size: 1.728rem;
+                width: fit-content;
+            }
+
+            p {
+                margin-block: auto;
+            }
+
+            &:hover {
+                color: var(--accent);
+                transition-duration: 0.2s;
+
+                svg  * {
+                    stroke: var(--accent) !important;
+                }
+            }
+
+        }
+    }
+
+    button#menu {
+        display: none;
+    }
+}
+
+@media (orientation: portrait) or (width < 900px) {
+    nav {
+        button#menu {
+            display: block;
+        }
+        #navigation {
+            display: none;
+        }
+    }
+
+}
